@@ -13,15 +13,12 @@ export default function Hero() {
             <div className="w-1/2 relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-black/40 z-10"></div>
                 <div className="absolute top-6 left-6 z-20 flex items-center space-x-2">
-                    <div className="w-wrap h-wrap flex items-center justify-center">
-                        <Image
-                            src="/logo.svg"
-                            alt="Africa DevOps Summit Logo"
-                            width={32}
-                            height={32}
-                            className="w-32 h-32"
-                        />
+                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                        </svg>
                     </div>
+                    <span className="text-white font-semibold text-sm">AFRICA DEVOPS SUMMIT</span>
                 </div>
                 <div className="absolute bottom-6 left-6 z-20">
                     <div className="text-white font-bold text-6xl">31st</div>
@@ -42,24 +39,20 @@ export default function Hero() {
 
             {/* Right Section - Digital Content */}
             <div className="w-1/2 bg-black relative overflow-hidden">
-                {/* Topographic lines background */}
+                {/* Background SVG */}
                 <div className="absolute inset-0 opacity-20">
-                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <path d="M0,50 Q25,30 50,50 T100,50" stroke="white" strokeWidth="0.5" fill="none" />
-                        <path d="M0,60 Q25,40 50,60 T100,60" stroke="white" strokeWidth="0.5" fill="none" />
-                        <path d="M0,40 Q25,20 50,40 T100,40" stroke="white" strokeWidth="0.5" fill="none" />
-                        <path d="M0,70 Q25,50 50,70 T100,70" stroke="white" strokeWidth="0.5" fill="none" />
-                        <path d="M0,30 Q25,10 50,30 T100,30" stroke="white" strokeWidth="0.5" fill="none" />
-                    </svg>
+                    <Image
+                        src="/bg.svg"
+                        alt="Background pattern"
+                        fill
+                        className="object-cover"
+                    />
                 </div>
 
                 {/* Navigation */}
-                <div className="absolute top-6 right-6 z-20 flex items-center space-x-6 text-white text-sm">
+                <div className="absolute top-6 right-6 z-20 flex space-x-6 text-white text-sm">
                     <a href="#" className="text-blue-400 font-medium">Home</a>
                     <a href="#" className="hover:text-blue-400 transition-colors">Get your Ticket</a>
-                    <Link href="/become-speaker" className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
-                        Become a Speaker
-                    </Link>
                 </div>
 
                 {/* Hero Content */}
