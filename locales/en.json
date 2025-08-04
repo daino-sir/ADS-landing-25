@@ -1,0 +1,20 @@
+{
+    "welcome": "Welcome to Next.js with i18next",
+    "description": "This is a boilerplate Next.js app with Tailwind CSS and i18next translation support",
+    "language": "Language",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "hero": {
+        "title": "Build amazing apps with Next.js",
+        "subtitle": "A modern React framework with TypeScript, Tailwind CSS, and internationalization",
+        "cta": "Get Started"
+    },
+    "features": {
+        "title": "Features",
+        "nextjs": "Next.js 14",
+        "tailwind": "Tailwind CSS",
+        "i18next": "i18next Translation",
+        "typescript": "TypeScript"
+    }
+}
