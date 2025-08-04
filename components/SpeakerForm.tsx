@@ -101,10 +101,10 @@ export default function SpeakerForm() {
             {Array.from({ length: totalSteps }, (_, i) => (
                 <div key={i} className="flex items-center">
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${i + 1 === currentStep
-                            ? 'bg-blue-600 text-white'
-                            : i + 1 < currentStep
-                                ? 'bg-green-500 text-white'
-                                : 'bg-gray-200 text-gray-600'
+                        ? 'bg-blue-600 text-white'
+                        : i + 1 < currentStep
+                            ? 'bg-green-500 text-white'
+                            : 'bg-gray-200 text-gray-600'
                         }`}>
                         {i + 1 < currentStep ? '✓' : i + 1}
                     </div>
@@ -128,7 +128,8 @@ export default function SpeakerForm() {
                         type="text"
                         value={formData.firstName}
                         onChange={(e) => updateFormData('firstName', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
+                        placeholder="Enter your first name"
                         required
                     />
                 </div>
@@ -139,7 +140,8 @@ export default function SpeakerForm() {
                         type="text"
                         value={formData.lastName}
                         onChange={(e) => updateFormData('lastName', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
+                        placeholder="Enter your last name"
                         required
                     />
                 </div>
@@ -150,7 +152,8 @@ export default function SpeakerForm() {
                         type="email"
                         value={formData.email}
                         onChange={(e) => updateFormData('email', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
+                        placeholder="Enter your email address"
                         required
                     />
                 </div>
@@ -161,7 +164,8 @@ export default function SpeakerForm() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => updateFormData('phone', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
+                        placeholder="Enter your phone number"
                     />
                 </div>
 
@@ -171,7 +175,8 @@ export default function SpeakerForm() {
                         type="text"
                         value={formData.company}
                         onChange={(e) => updateFormData('company', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
+                        placeholder="Enter your company name"
                         required
                     />
                 </div>
@@ -182,7 +187,8 @@ export default function SpeakerForm() {
                         type="text"
                         value={formData.jobTitle}
                         onChange={(e) => updateFormData('jobTitle', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
+                        placeholder="Enter your job title"
                         required
                     />
                 </div>
@@ -195,7 +201,7 @@ export default function SpeakerForm() {
                         type="url"
                         value={formData.linkedin}
                         onChange={(e) => updateFormData('linkedin', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                         placeholder="https://linkedin.com/in/yourprofile"
                     />
                 </div>
@@ -207,7 +213,7 @@ export default function SpeakerForm() {
                             type="text"
                             value={formData.twitter}
                             onChange={(e) => updateFormData('twitter', e.target.value)}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                             placeholder="@yourhandle"
                         />
                     </div>
@@ -218,7 +224,7 @@ export default function SpeakerForm() {
                             type="url"
                             value={formData.github}
                             onChange={(e) => updateFormData('github', e.target.value)}
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                             placeholder="https://github.com/yourusername"
                         />
                     </div>
@@ -237,7 +243,7 @@ export default function SpeakerForm() {
                     type="text"
                     value={formData.sessionTitle}
                     onChange={(e) => updateFormData('sessionTitle', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                     placeholder="e.g., Scaling DevOps in African Markets"
                     required
                 />
@@ -249,7 +255,7 @@ export default function SpeakerForm() {
                     value={formData.sessionDescription}
                     onChange={(e) => updateFormData('sessionDescription', e.target.value)}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                     placeholder="Provide a detailed description of your session..."
                     required
                 />
@@ -261,7 +267,7 @@ export default function SpeakerForm() {
                     <select
                         value={formData.sessionType}
                         onChange={(e) => updateFormData('sessionType', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
                         required
                     >
                         <option value="">Select type</option>
@@ -278,7 +284,7 @@ export default function SpeakerForm() {
                     <select
                         value={formData.sessionDuration}
                         onChange={(e) => updateFormData('sessionDuration', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
                         required
                     >
                         <option value="">Select duration</option>
@@ -295,7 +301,7 @@ export default function SpeakerForm() {
                     <select
                         value={formData.sessionLevel}
                         onChange={(e) => updateFormData('sessionLevel', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
                         required
                     >
                         <option value="">Select level</option>
@@ -318,7 +324,7 @@ export default function SpeakerForm() {
                 <select
                     value={formData.yearsOfExperience}
                     onChange={(e) => updateFormData('yearsOfExperience', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
                     required
                 >
                     <option value="">Select experience</option>
@@ -335,7 +341,7 @@ export default function SpeakerForm() {
                     value={formData.previousSpeakingExperience}
                     onChange={(e) => updateFormData('previousSpeakingExperience', e.target.value)}
                     rows={3}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                     placeholder="Describe your previous speaking experience, if any..."
                 />
             </div>
@@ -346,7 +352,7 @@ export default function SpeakerForm() {
                     value={formData.bio}
                     onChange={(e) => updateFormData('bio', e.target.value)}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                     placeholder="Tell us about yourself and your background..."
                     required
                 />
@@ -364,7 +370,7 @@ export default function SpeakerForm() {
                     value={formData.whySpeak}
                     onChange={(e) => updateFormData('whySpeak', e.target.value)}
                     rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                     placeholder="Share your motivation for speaking at this event..."
                     required
                 />
@@ -376,7 +382,7 @@ export default function SpeakerForm() {
                     value={formData.additionalNotes}
                     onChange={(e) => updateFormData('additionalNotes', e.target.value)}
                     rows={3}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black placeholder-gray-500"
                     placeholder="Any additional information you'd like to share..."
                 />
             </div>
@@ -411,8 +417,8 @@ export default function SpeakerForm() {
                         onClick={prevStep}
                         disabled={currentStep === 1}
                         className={`px-6 py-3 rounded-lg font-semibold transition-colors ${currentStep === 1
-                                ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
-                                : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                            ? 'bg-gray-200 text-gray-500 cursor-not-allowed'
+                            : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
                             }`}
                     >
                         Previous
@@ -432,8 +438,8 @@ export default function SpeakerForm() {
                                 type="submit"
                                 disabled={isSubmitting}
                                 className={`px-6 py-3 rounded-lg font-semibold transition-colors ${isSubmitting
-                                        ? 'bg-gray-400 cursor-not-allowed'
-                                        : 'bg-green-600 hover:bg-green-700 text-white'
+                                    ? 'bg-gray-400 cursor-not-allowed'
+                                    : 'bg-green-600 hover:bg-green-700 text-white'
                                     }`}
                             >
                                 {isSubmitting ? 'Submitting...' : 'Submit Application'}
