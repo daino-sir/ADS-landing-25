@@ -3,6 +3,7 @@
 import { useTranslation } from 'react-i18next'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import HallOfFame from '@/components/HallOfFame'
 import Speakers from '@/components/Speakers'
 import Schedule from '@/components/Schedule'
 import Pricing from '@/components/Pricing'
@@ -15,6 +16,7 @@ export default function Home() {
         <main className="min-h-screen">
             <Hero />
             <About />
+            <HallOfFame />
             <Speakers />
             <Schedule />
             <Pricing />

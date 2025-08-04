@@ -14,7 +14,7 @@ export default function About() {
                     <div className="relative">
                         {/* Quotation Mark Icon */}
                         <div className="absolute -top-4 -left-4 text-gray-300 text-6xl font-serif">
-                            "
+                            &quot;
                         </div>
 
                         {/* Title */}
@@ -33,7 +33,7 @@ export default function About() {
                             </p>
                             <p>
                                 Hosted in the vibrant city of Nairobi, this summit is a unique opportunity
-                                to connect, learn, and contribute to the tech revolution shaping Africa's future.
+                                to connect, learn, and contribute to the tech revolution shaping Africa&apos;s future.
                             </p>
                         </div>
                     </div>
