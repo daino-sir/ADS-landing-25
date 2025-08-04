@@ -32,7 +32,7 @@ export default function HallOfFame() {
                 <div className="text-center">
                     {/* Subtitle */}
                     <p className="text-blue-600 text-sm font-medium mb-4">
-                        The only Hall of Fame that doesn't cost much to feature 😊
+                        The only Hall of Fame that doesn&apos;t cost much to feature 😊
                     </p>
 
                     {/* Main Title */}
