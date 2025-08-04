@@ -12,13 +12,13 @@ export default function Header() {
         <header className="absolute top-0 left-0 right-0 z-50 px-6 py-4">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 flex items-center justify-center">
+                    <div className="w-wrap h-wrap flex items-center justify-center">
                         <Image
                             src="/logo.svg"
                             alt="Africa DevOps Summit Logo"
                             width={32}
                             height={32}
-                            className="w-8 h-8"
+                            className="w-16 h-16"
                         />
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslation } from 'react-i18next'
+import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import HallOfFame from '@/components/HallOfFame'
@@ -14,6 +15,7 @@ export default function Home() {
 
     return (
         <main className="min-h-screen">
+            {/* <Header /> */}
             <Hero />
             <About />
             <HallOfFame />

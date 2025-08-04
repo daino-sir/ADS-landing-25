@@ -2,6 +2,7 @@
 
 import { useTranslation } from 'react-i18next'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
     const { t } = useTranslation()
@@ -43,19 +44,22 @@ export default function Hero() {
             <div className="w-1/2 bg-black relative overflow-hidden">
                 {/* Topographic lines background */}
                 <div className="absolute inset-0 opacity-20">
-                    <Image
-                        src="/bg.svg"
-                        alt="Topographic lines"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
+                    <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path d="M0,50 Q25,30 50,50 T100,50" stroke="white" strokeWidth="0.5" fill="none" />
+                        <path d="M0,60 Q25,40 50,60 T100,60" stroke="white" strokeWidth="0.5" fill="none" />
+                        <path d="M0,40 Q25,20 50,40 T100,40" stroke="white" strokeWidth="0.5" fill="none" />
+                        <path d="M0,70 Q25,50 50,70 T100,70" stroke="white" strokeWidth="0.5" fill="none" />
+                        <path d="M0,30 Q25,10 50,30 T100,30" stroke="white" strokeWidth="0.5" fill="none" />
+                    </svg>
                 </div>
 
                 {/* Navigation */}
-                <div className="absolute top-6 right-6 z-20 flex space-x-6 text-white text-sm">
+                <div className="absolute top-6 right-6 z-20 flex items-center space-x-6 text-white text-sm">
                     <a href="#" className="text-blue-400 font-medium">Home</a>
                     <a href="#" className="hover:text-blue-400 transition-colors">Get your Ticket</a>
+                    <Link href="/become-speaker" className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors">
+                        Become a Speaker
+                    </Link>
                 </div>
 
                 {/* Hero Content */}
@@ -78,10 +82,18 @@ export default function Hero() {
                         Join industry leaders, engineers, and visionaries transforming DevOps across the continent.
                     </p>
 
-                    {/* CTA Button */}
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors w-fit">
-                        Book your seat Today
-                    </button>
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors w-fit">
+                            Book your seat Today
+                        </button>
+                        <Link
+                            href="/become-speaker"
+                            className="bg-transparent hover:bg-white/10 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-colors w-fit border-2 border-white"
+                        >
+                            Become a Speaker
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>

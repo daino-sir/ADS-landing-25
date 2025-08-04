@@ -14,16 +14,15 @@ export default function Footer() {
                     {/* Logo and Description */}
                     <div className="md:col-span-2">
                         <div className="flex items-center space-x-2 mb-4">
-                            <div className="w-8 h-8 flex items-center justify-center">
+                            <div className="w-wrap h-wrap flex items-center justify-center">
                                 <Image
                                     src="/logo.svg"
                                     alt="Africa DevOps Summit Logo"
                                     width={32}
                                     height={32}
-                                    className="w-8 h-8"
+                                    className="w-16 h-16"
                                 />
                             </div>
-                            <span className="text-white font-bold text-xl">AFRICA DEVOPS SUMMIT</span>
                         </div>
                         <p className="text-gray-300 mb-6 max-w-md">
                             The premier DevOps event in Africa, bringing together professionals,
