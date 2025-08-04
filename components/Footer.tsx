@@ -20,7 +20,7 @@ export default function Footer() {
                                     alt="Africa DevOps Summit Logo"
                                     width={32}
                                     height={32}
-                                    className="w-16 h-16"
+                                    className="w-32 h-32"
                                 />
                             </div>
                         </div>
