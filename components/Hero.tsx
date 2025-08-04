@@ -13,12 +13,15 @@ export default function Hero() {
             <div className="w-1/2 relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-black/40 z-10"></div>
                 <div className="absolute top-6 left-6 z-20 flex items-center space-x-2">
-                    <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                        </svg>
+                    <div className="w-wrap h-wrap flex items-center justify-center">
+                        <Image
+                            src="/logo.svg"
+                            alt="Africa DevOps Summit Logo"
+                            width={32}
+                            height={32}
+                            className="w-32 h-32"
+                        />
                     </div>
-                    <span className="text-white font-semibold text-sm">AFRICA DEVOPS SUMMIT</span>
                 </div>
                 <div className="absolute bottom-6 left-6 z-20">
                     <div className="text-white font-bold text-6xl">31st</div>
