@@ -6,16 +6,15 @@ import Image from 'next/image'
 const sponsors = [
     {
         name: "Moringa",
-        logo: "/sponsor-moringa.svg",
-        tagline: "Discover Grow Transform"
+        logo: "/moringa-logo.png",
     },
     {
         name: "JetBrains",
-        logo: "/sponsor-jetbrains.svg"
+        logo: "/jetbrains.svg"
     },
     {
         name: "Nairobi DevOps Community",
-        logo: "/sponsor-nairobi-devops.svg"
+        logo: "/sponsor-nairobi-devops.png"
     },
     {
         name: "Tinygone",
@@ -62,11 +61,6 @@ export default function HallOfFame() {
                                     <h3 className="font-semibold text-gray-900 text-sm">
                                         {sponsor.name}
                                     </h3>
-                                    {sponsor.tagline && (
-                                        <p className="text-gray-500 text-xs mt-1">
-                                            {sponsor.tagline}
-                                        </p>
-                                    )}
                                 </div>
                             </div>
                         ))}
@@ -89,16 +83,11 @@ export default function HallOfFame() {
                                     <h3 className="font-semibold text-gray-900 text-sm">
                                         {sponsor.name}
                                     </h3>
-                                    {sponsor.tagline && (
-                                        <p className="text-gray-500 text-xs mt-1">
-                                            {sponsor.tagline}
-                                        </p>
-                                    )}
                                 </div>
                             </div>
                         ))}
                         {/* Repeat Moringa in the second row */}
-                        <div className="flex flex-col items-center space-y-3 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        {/* <div className="flex flex-col items-center space-y-3 p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 flex items-center justify-center mb-2">
                                 <Image
                                     src="/sponsor-moringa.svg"
@@ -116,7 +105,7 @@ export default function HallOfFame() {
                                     Discover Grow Transform
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
