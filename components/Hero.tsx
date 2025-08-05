@@ -24,9 +24,9 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="absolute bottom-6 left-6 z-20">
-                    <div className="text-white font-bold text-6xl">31st</div>
-                    <div className="text-blue-400 font-bold text-xl">OCT. 2025</div>
-                    <div className="text-white text-lg mt-1">Nairobi, Kenya</div>
+                    <div className="text-white font-bold text-9xl">31st</div>
+                    <div className="text-blue-400 font-bold text-3xl">OCT. 2025</div>
+                    <div className="text-white text-2xl mt-1">Nairobi, Kenya</div>
                 </div>
                 {/* Actual group photo from Nairobi DevOps Summit */}
                 <div className="w-full h-full relative">
