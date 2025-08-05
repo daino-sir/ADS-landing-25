@@ -83,13 +83,6 @@ export default function Speakers() {
                         </div>
                     ))}
                 </div>
-
-                {/* CTA Button */}
-                <div className="text-center mt-12">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
-                        View All Speakers
-                    </button>
-                </div>
             </div>
         </section>
     )
